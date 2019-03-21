@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/image_filme"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_movie"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_weight="3"
+        android:paddingTop="6dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meo Pao"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_diretor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Di oculus"/>
+
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/rate_nota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:numStars="5"
+        android:max="5"
+        style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+</LinearLayout>
